@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "Ganar La Muela" %></title>
+
+    <%= stylesheet_link_tag "application", "all" %>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
+
+    <%= javascript_include_tag  "all" %>
+  </head>
+
+  <body class="<%= page_classes %>">
+
+    <div class="wrapper">
+
+        <div class="navbar-fixed nav-bar">
+          <nav class="nav">
+            <div class="nav-wrapper container">
+              <a href="#" class="brand-logo">
+                <img src="images/logo-ganar-la-muela-mini.png" alt="Ganar La Muela" id="logo">
+              </a>
+              <ul id="top-nav" class="right hide-on-med-and-down top-nav">
+                <%= partial "main-nav" %>
+              </ul>
+            </div>
+          </nav>
+        </div><!-- navbar -->
+
+        <main class="content">
+          <%= yield %>
+        </main><!-- content -->
+
+        <footer class="blue-grey darken-4 page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l3 footer-nav">
+                <ul>
+                  <%= partial "main-nav" %>
+                </ul>
+              </div>
+              <div class="col l9 s12">
+                <p class="right"><strong>GANAR La Muela</strong> es una coalición electoral entre IU y miembros del Círculo Podemos de La Muela</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            <small>GANAR La Muela © 2015</small>
+            <%= link_to 'f', '/facebook.html', :class => "grey-text text-lighten-4 right icon facebook" %>
+            </div>
+          </div>
+        </footer><!-- footer -->
+    </div><!-- wrapper -->
+  </body>
+</html>

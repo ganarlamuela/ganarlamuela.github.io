@@ -1,0 +1,108 @@
+// Colours
+$black: #263238;
+$grey: #607d8b;
+$red: #BD0926;
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
+
+// Layout
+html{
+    font-family: "Open Sans", sans-serif !important;
+}
+.btn{
+    background-color: $red !important;
+}
+.container{
+}
+.hero{
+    padding: 0;
+    .responsive-img{
+        width: 100%;
+    }
+}
+.nav-bar{
+    .nav{
+        background: transparentize(white, 0.1);
+        .top-nav a{
+            font-weight: 300;
+            color: $grey;
+            text-transform: capitalize;
+            transition: background 0.4s;
+            &:hover{
+                background: $red;
+                color: white;
+                opacity: 0.9;
+            }
+            &.icon{
+                text-indent: -99999px;
+                background-color: none !important;
+            }
+            &.facebook{
+                background: url(../images/icon-24-facebook.png) center no-repeat;
+            }
+        }
+    }
+    .brand-logo{
+        padding-top: 0.7%;
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+}
+.page-footer{
+    margin-top: -1.7rem !important;
+    a, p, small{
+        color: $grey;
+        font-size: 0.9rem;
+    }
+    small{
+        font-size: 0.7rem;
+    }
+    .footer-nav{
+        text-transform: capitalize;
+        a{
+            transition: color 0.4s;
+            &:hover{
+                color: transparentize(white, 0.3);
+            }
+        }
+        a.facebook{
+            display: none;
+        }
+    }
+    .footer-copyright{
+        a.facebook{
+            text-indent: -99999px;
+            background: url(../images/icon-24-facebook.png) center no-repeat;
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            opacity: 0.6;
+            &:hover{
+                transition: opacity 0.4s;
+                opacity: 0.8;
+            }
+        }
+    }
+}
+.claim{
+    color: white;
+    background: $black;
+    padding: 1rem 0 2rem 0;
+    margin-top: -0.4em;
+}
+.claim-section{
+    .btn{
+        margin-top: -27%;
+        &:hover{
+            background: darken($red, 5%) !important;
+        }
+    }
+}
+
+/* RESPONSIVE */
+@media only screen and (min-width: 993px){
+    .container {
+        width: 90% !important;
+    }
+}
