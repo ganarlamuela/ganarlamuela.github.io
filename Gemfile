@@ -15,3 +15,5 @@ gem "tzinfo-data", platforms: [:mswin, :mingw]
 
 # Materialize CSS framework
 gem 'materialize-sass'
+
+gem 'middleman-deploy', '~> 1.0'
