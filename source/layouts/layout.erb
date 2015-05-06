@@ -29,9 +29,9 @@
         <div class="navbar-fixed nav-bar">
           <nav class="nav">
             <div class="nav-wrapper container">
-              <a href="/" class="brand-logo">
-                <img src="images/logo-ganar-la-muela-mini.png" alt="Ganar La Muela" id="logo">
-              </a>
+              <% link_to '/ganarlamuela', :class => "brand-logo" do %>
+                <%= image_tag 'logo-ganar-la-muela-mini.png', :id =>"logo", :alt => "Ganar La Muela" %>
+              <% end %>
               <ul id="top-nav" class="right hide-on-med-and-down top-nav">
                 <%= partial "main-nav" %>
               </ul>
