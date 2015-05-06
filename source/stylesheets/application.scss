@@ -24,11 +24,13 @@ h3{
 .btn{
     background-color: $red !important;
 }
-.collection-item{
+a.collection-item{
     color: $red !important;
     &:hover{
         background-color: transparentize($grey, 0.95) !important;
     }
+}
+.collection-item{
 }
 .list{
     padding-left: 3rem;
@@ -154,6 +156,18 @@ h3{
     .aside-nav{
         position: fixed;
         width: 20%;
+    }
+    .collection-item.avatar.valign-wrapper {
+      height: 65px;
+    }
+    .candidatos{
+        .circle{
+            border: 2px solid $red !important;
+            color: $red !important;
+            background: transparent !important;
+            line-height: 2.5rem !important;
+            font-style: normal !important;
+        }
     }
 }/* secondary-page */
 
