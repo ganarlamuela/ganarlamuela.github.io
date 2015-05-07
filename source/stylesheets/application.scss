@@ -214,3 +214,17 @@ a.collection-item{
         width: 90% !important;
     }
 }
+@media only screen and (min-width: 600px){
+    .page-footer{
+        a{
+            border-bottom: 1px solid transparentize($grey, 0.3);
+            display: inline-block;
+            width: 100%;
+            font-size: 1.6rem;
+            padding: 0.45rem 0;
+            &.first{
+                border-top: 1px solid transparentize($grey, 0.3);
+            }
+        }
+    }
+}
