@@ -181,6 +181,32 @@ a.collection-item{
     }
 }/* secondary-page */
 
+.actualidad{
+    article{
+        margin-bottom: 6rem;
+        figure{
+            margin: 0;
+            padding: 0;
+            max-height: 280px;
+        }
+    }
+    header{
+        .title{
+            font-weight: 700;
+            line-height: 2.5rem;
+        }
+        img{
+            border-top: 5px solid $red;
+        }
+        date{
+            display: inline-block;
+            background: $red;
+            color: white;
+            padding: 0.2rem 1rem;
+        }
+    }
+}/* actualidad */
+
 
 /* RESPONSIVE */
 @media only screen and (min-width: 993px){
