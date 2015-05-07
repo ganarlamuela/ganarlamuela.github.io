@@ -32,6 +32,9 @@ a.collection-item{
 }
 .collection-item{
 }
+.responsive-img{
+    width: 100%;
+}
 .list{
     padding-left: 3rem;
     &.u-list li{
@@ -46,11 +49,14 @@ a.collection-item{
 }
 .container{
 }
-.hero{
-    padding: 0;
+.hero,
+.claim-section{
     .responsive-img{
         width: 100%;
     }
+}
+.hero{
+    padding: 0;
 }
 .nav-bar{
     .nav{
